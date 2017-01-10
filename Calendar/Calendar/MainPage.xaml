@@ -7,11 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Right" Width="1280">
-        <Grid Margin="0,0,936,351" Height="349" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="324">
-            <CalendarView HorizontalAlignment="Left" Margin="10,10,0,11" VerticalAlignment="Stretch" Width="304"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.51,0.489" Margin="0,10,0,0" HorizontalAlignment="Left" Width="1280" Height="710" VerticalAlignment="Top">
+        <Grid Margin="20,20,0,0" Height="349" VerticalAlignment="Top" HorizontalAlignment="Left" Width="324">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="35*"/>
+            </Grid.ColumnDefinitions>
+            <CalendarView HorizontalAlignment="Left" Margin="1,10,0,11" VerticalAlignment="Stretch" Width="304" Grid.Column="1"/>
         </Grid>
-        <Grid Margin="0,0,936,47" HorizontalAlignment="Right" Width="324" Height="299" VerticalAlignment="Bottom">
+        <Grid Margin="20,374,0,0" RenderTransformOrigin="0.491,0.501" HorizontalAlignment="Left" Width="324" Height="299" VerticalAlignment="Top">
             <Button x:Name="buttonDay" Content="Day" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Height="59" Width="304"/>
             <Button x:Name="buttonWeek" Content="Week" HorizontalAlignment="Right" Margin="0,74,10,0" VerticalAlignment="Top" Height="59" Width="304"/>
             <Button x:Name="buttonMonth" Content="Month" HorizontalAlignment="Right" Margin="0,138,10,0" VerticalAlignment="Top" Width="304" Height="59"/>
