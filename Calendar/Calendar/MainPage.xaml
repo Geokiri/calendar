@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <CalendarView HorizontalAlignment="Left" Margin="13.978,17.027,0,0" VerticalAlignment="Top" Height="260.946" Width="320.044" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <CalendarView HorizontalAlignment="Left" Margin="20.978,20.027,0,0" VerticalAlignment="Top" Height="260.946" Width="320.044" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <CalendarView.RenderTransform>
                 <CompositeTransform Rotation="0.021"/>
             </CalendarView.RenderTransform>
