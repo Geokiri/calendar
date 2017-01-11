@@ -5,20 +5,22 @@
     xmlns:local="using:Calendar"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="991.049" Width="2065.082">
+    mc:Ignorable="d" MinWidth="323" MinHeight="550" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-1993,-514,10,-1778">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="79*"/>
-            <ColumnDefinition Width="241*"/>
-        </Grid.ColumnDefinitions>
 
-        <CalendarView HorizontalAlignment="Stretch" Margin="10,10,293,670" VerticalAlignment="Stretch"/>
-        <Button x:Name="Day" Content="Day" HorizontalAlignment="Left" Margin="39,331,0,0" VerticalAlignment="Top" Width="220" Height="40"/>
-        <Button x:Name="Week" Content="Week" HorizontalAlignment="Left" Margin="39,376,0,0" VerticalAlignment="Top" Width="220" Height="40"/>
-        <Button x:Name="Month" Content="Month" HorizontalAlignment="Left" Margin="39,421,0,0" VerticalAlignment="Top" Width="220" Height="40"/>
-        <CalendarView HorizontalAlignment="Left" Margin="102,48,0,0" VerticalAlignment="Top" Height="1405" Width="2660" Grid.ColumnSpan="2"/>
-        <Button x:Name="button" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Height="513" Margin="502,706,0,0" VerticalAlignment="Top" Width="934"/>
+    <Grid x:Name="Background" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.51,0.489" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="325" MinHeight="550" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto" Width="1280" Height="720">
+        <Grid x:Name="CalendarView" Height="540" VerticalAlignment="Top" HorizontalAlignment="Left" Width="324" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto" MinHeight="550" MinWidth="325" Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="155*"/>
 
+            </Grid.ColumnDefinitions>
+            <CalendarView HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top" Grid.Column="1" Height="328" Width="304" FirstDayOfWeek="Monday" NumberOfWeeksInView="6" DayOfWeekFormat="" IsHitTestVisible="False"/>
+
+            <Button x:Name="buttonDay" Content="Day" HorizontalAlignment="Left" Margin="0,356,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
+            <Button x:Name="buttonWeek" Content="Week" HorizontalAlignment="Left" Margin="1,420,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
+            <Button x:Name="buttonMonth" Content="Month" HorizontalAlignment="Left" Margin="1,484,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="700" Margin="381,10,0,0" VerticalAlignment="Top" Width="889"/>
     </Grid>
 </Page>
