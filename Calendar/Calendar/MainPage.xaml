@@ -23,39 +23,49 @@
                 <Button x:Name="buttonMonth" Content="Month" HorizontalAlignment="Left" Margin="1,484,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
             </Grid>
             <Grid HorizontalAlignment="Left" Height="700" Margin="381,10,0,0" VerticalAlignment="Top" Width="889">
-                <GridView x:Name="gridView" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Width="868" Height="640">
-                    <GridViewItem Content="_Day_1_" Margin="5,0" Width="124" Height="105"/>
-                    <GridViewItem Content="_Day_2_" Margin="5"/>
-                    <GridViewItem Content="_Day_3_" Margin="5"/>
-                    <GridViewItem Content="Day4" Margin="5"/>
-                    <GridViewItem Content="Day5" Margin="5"/>
-                    <GridViewItem Content="Day6" Margin="5"/>
-                    <GridViewItem Content="Day7" Margin="5"/>
-                    <GridViewItem Content="Day8" Margin="5"/>
-                    <GridViewItem Content="Day9" Margin="5"/>
-                    <GridViewItem Content="Day10" Margin="5"/>
-                    <GridViewItem Content="Day11" Margin="5"/>
-                    <GridViewItem Content="Day12" Margin="5"/>
-                    <GridViewItem Content="Day13" Margin="5"/>
-                    <GridViewItem Content="Day14" Margin="5"/>
-                    <GridViewItem Content="Day15" Margin="5"/>
-                    <GridViewItem Content="Day16" Margin="5"/>
-                    <GridViewItem Content="Day17" Margin="5"/>
-                    <GridViewItem Content="Day18" Margin="5"/>
-                    <GridViewItem Content="Day19" Margin="5"/>
-                    <GridViewItem Content="Day20" Margin="5"/>
-                    <GridViewItem Content="Day21" Margin="5"/>
-                    <GridViewItem Content="Day22" Margin="5"/>
-                    <GridViewItem Content="Day23" Margin="5"/>
-                    <GridViewItem Content="Day24" Margin="5"/>
-                    <GridViewItem Content="Day25" Margin="5"/>
-                    <GridViewItem Content="Day26" Margin="5"/>
-                    <GridViewItem Content="Day27" Margin="5"/>
-                    <GridViewItem Content="Day28" Margin="5"/>
-                    <GridViewItem Content="Day29" Margin="5"/>
-                    <GridViewItem Content="Day30" Margin="5"/>
-                    <GridViewItem Content="Day31" Margin="5"/>
-                    <GridViewItem Content="Day32" Margin="5"/>
+                <GridView x:Name="gridView" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Width="868" Height="628">
+                    <GridViewItem Content="_Day_1_" Margin="0" Width="124" Height="102"/>
+                    <GridViewItem Content="_Day_2_" Margin="0"/>
+                    <GridViewItem Content="_Day_3_" Margin="0"/>
+                    <GridViewItem Content="Day4" Margin="0"/>
+                    <GridViewItem Content="Day5" Margin="0"/>
+                    <GridViewItem Content="Day6" Margin="0"/>
+                    <GridViewItem Content="Day7" Margin="0"/>
+                    <GridViewItem Content="Day8" Margin="0"/>
+                    <GridViewItem Content="Day9" Margin="0"/>
+                    <GridViewItem Content="Day10" Margin="0"/>
+                    <GridViewItem Content="Day11" Margin="0"/>
+                    <GridViewItem Content="Day12" Margin="0"/>
+                    <GridViewItem Content="Day13" Margin="0"/>
+                    <GridViewItem Content="Day14" Margin="0"/>
+                    <GridViewItem Content="Day15" Margin="0"/>
+                    <GridViewItem Content="Day16" Margin="0"/>
+                    <GridViewItem Content="Day17" Margin="0"/>
+                    <GridViewItem Content="Day18" Margin="0"/>
+                    <GridViewItem Content="Day19" Margin="0"/>
+                    <GridViewItem Content="Day20" Margin="0"/>
+                    <GridViewItem Content="Day21" Margin="0"/>
+                    <GridViewItem Content="Day22" Margin="0"/>
+                    <GridViewItem Content="Day23" Margin="0"/>
+                    <GridViewItem Content="Day24" Margin="0"/>
+                    <GridViewItem Content="Day25" Margin="0"/>
+                    <GridViewItem Content="Day26" Margin="0"/>
+                    <GridViewItem Content="Day27" Margin="0"/>
+                    <GridViewItem Content="Day28" Margin="0"/>
+                    <GridViewItem Content="Day29" Margin="0"/>
+                    <GridViewItem Content="Day30" Margin="0"/>
+                    <GridViewItem Content="Day31" Margin="0"/>
+                    <GridViewItem Content="Day32" Margin="0"/>
+                    <GridViewItem Content="Day33" Margin="0"/>
+                    <GridViewItem Content="Day34" Margin="0"/>
+                    <GridViewItem Content="Day35" Margin="0"/>
+                    <GridViewItem Content="Day36" Margin="0"/>
+                    <GridViewItem Content="Day37" Margin="0"/>
+                    <GridViewItem Content="Day38" Margin="0"/>
+                    <GridViewItem Content="Day39" Margin="0"/>
+                    <GridViewItem Content="Day40" Margin="0"/>
+                    <GridViewItem Content="Day41" Margin="0"/>
+                    <GridViewItem Content="Day42" Margin="0"/>
                 </GridView>
                 <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="42" Margin="157,10,0,0" TextWrapping="Wrap" Text="_month_name_, _year-name_" VerticalAlignment="Top" Width="498"/>
             </Grid>
