@@ -29,9 +29,19 @@ namespace Calendar
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(EntryPage));
+            this.Frame.Navigate(typeof(MainPage));
 
 
+        }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void Notifications_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

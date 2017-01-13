@@ -9,7 +9,15 @@
 
 
     <Grid x:Name="Background" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.51,0.489" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="325" MinHeight="550" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto" Width="1280" Height="720">
-        <Grid x:Name="CalendarView" Height="540" VerticalAlignment="Top" HorizontalAlignment="Left" Width="324" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto" MinHeight="550" MinWidth="325" Margin="0,10,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="CalendarView" Height="540" VerticalAlignment="Top" HorizontalAlignment="Left" Width="324" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto" MinHeight="550" MinWidth="325" Margin="0,10,0,0" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="9*"/>
                 <ColumnDefinition Width="155*"/>
@@ -17,10 +25,11 @@
             </Grid.ColumnDefinitions>
             <CalendarView HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top" Grid.Column="1" Height="328" Width="304" FirstDayOfWeek="Monday" NumberOfWeeksInView="6" DayOfWeekFormat="" IsHitTestVisible="False"/>
 
-            <Button x:Name="buttonDay" Content="Day" HorizontalAlignment="Left" Margin="0,356,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
-            <Button x:Name="buttonWeek" Content="Week" HorizontalAlignment="Left" Margin="1,420,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
-            <Button x:Name="buttonMonth" Content="Month" HorizontalAlignment="Left" Margin="1,484,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
+            <Button x:Name="buttonDay" Content="Day" HorizontalAlignment="Left" Margin="0,6,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1" Grid.Row="1"/>
+            <Button x:Name="buttonWeek" Content="Week" HorizontalAlignment="Left" Margin="1,70,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1" Grid.Row="1"/>
+            <Button x:Name="buttonMonth" Content="Month" HorizontalAlignment="Left" Margin="1,134,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1" Grid.Row="1"/>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="700" Margin="381,10,0,0" VerticalAlignment="Top" Width="889"/>
+        <Grid HorizontalAlignment="Left" Height="700" Margin="381,10,0,0" VerticalAlignment="Top" Width="889" Grid.RowSpan="2"/>
+        <Button x:Name="button" Content="Entry " HorizontalAlignment="Left" Height="48" Margin="20,263,0,0" VerticalAlignment="Top" Width="304" Click="button_Click_1" Grid.Row="1"/>
     </Grid>
 </Page>
