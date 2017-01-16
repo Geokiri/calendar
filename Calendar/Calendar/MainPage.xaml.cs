@@ -39,7 +39,7 @@ namespace Calendar
 
         private void buttonWeek_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(WeekPage));
         }
     }
 }

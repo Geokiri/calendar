@@ -25,8 +25,8 @@
         <Button Grid.Row="1" Grid.Column="0" x:Name="buttonDay" Content="Day" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="buttonDay_Click" Margin="10,10,10,0" />
         <Button Grid.Row="2" Grid.Column="0" x:Name="buttonWeek" Content="Week" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Click="buttonWeek_Click" Margin="10,10,10,0"/>
         <Button Grid.Row="3" Grid.Column="0" x:Name="buttonMonth" Content="Month" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Click="buttonMonth_Click" Margin="10"/>
-        <GridView x:Name="gridView" Grid.Row="0" Grid.Column="1" Margin="42,38,62,10" Grid.RowSpan="5">
-            <GridViewItem Content="Monday" Margin="0" Width="114" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="122.019">
+        <GridView x:Name="gridView" Grid.Row="0" Grid.Column="1" Margin="42,38,62,32" Grid.RowSpan="5" Height="660" Width="815">
+            <GridViewItem Content="Monday" Margin="0" Width="114" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="55">
                 <GridViewItem.RenderTransform>
                     <CompositeTransform Rotation="-0.726"/>
                 </GridViewItem.RenderTransform>
