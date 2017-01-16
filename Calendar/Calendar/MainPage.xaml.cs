@@ -29,10 +29,12 @@ namespace Calendar
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            
+            this.Frame.Navigate(typeof(EntryPage));
         }
 
-        private void button_Click_1(object sender, RoutedEventArgs e)
+       
+
+        private void button_Click_2(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(EntryPage));
         }

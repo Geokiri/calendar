@@ -69,6 +69,7 @@
                 </GridView>
                 <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="42" Margin="157,10,0,0" TextWrapping="Wrap" Text="_month_name_, _year-name_" VerticalAlignment="Top" Width="498"/>
             </Grid>
+            <Button x:Name="buttonEntry" Content="Entry" HorizontalAlignment="Left" Height="70" Margin="20,560,0,0" VerticalAlignment="Top" Width="305" Click="button_Click_2"/>
         </Grid>
     </ScrollViewer>
 </Page>
