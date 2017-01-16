@@ -19,7 +19,7 @@
                 <CalendarView HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top" Grid.Column="1" Height="328" Width="304" FirstDayOfWeek="Monday" NumberOfWeeksInView="6" DayOfWeekFormat="" IsHitTestVisible="False"/>
 
                 <Button x:Name="buttonDay" Content="Day" HorizontalAlignment="Left" Margin="0,356,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
-                <Button x:Name="buttonWeek" Content="Week" HorizontalAlignment="Left" Margin="1,420,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
+                <Button x:Name="buttonWeek" Content="Week" HorizontalAlignment="Left" Margin="1,420,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1" Click="buttonWeek_Click"/>
                 <Button x:Name="buttonMonth" Content="Month" HorizontalAlignment="Left" Margin="1,484,0,0" VerticalAlignment="Top" Height="59" Width="304" Grid.Column="1"/>
             </Grid>
             <Grid HorizontalAlignment="Left" Height="700" Margin="381,10,0,0" VerticalAlignment="Top" Width="889">

@@ -36,5 +36,10 @@ namespace Calendar
         {
             this.Frame.Navigate(typeof(EntryPage));
         }
+
+        private void buttonWeek_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
