@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.EntityFrameworkCore;
 
 namespace Calendar
 {
@@ -30,6 +31,11 @@ namespace Calendar
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            using (var db = new CalendarContext())
+            {
+                db.Database.Migrate();
+            }
+
         }
 
         /// <summary>

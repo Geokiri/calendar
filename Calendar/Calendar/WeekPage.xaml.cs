@@ -26,5 +26,21 @@ namespace Calendar
         {
             this.InitializeComponent();
         }
+
+        private void buttonWeek_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonMonth_Click(object sender, RoutedEventArgs e)
+        {
+            
+            this.Frame.Navigate(typeof(MainPage), null);
+        }
+
+        private void buttonDay_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

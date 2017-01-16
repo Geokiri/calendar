@@ -5,19 +5,105 @@
     xmlns:local="using:Calendar"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="Background" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="79*"/>
-            <ColumnDefinition Width="241*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="23*"/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="180*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="79*"/>
+        </Grid.RowDefinitions>
+        <CalendarView Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FirstDayOfWeek="Monday" NumberOfWeeksInView="6" DayOfWeekFormat="" IsHitTestVisible="False"/>
+        <Button Grid.Row="1" Grid.Column="0" x:Name="buttonDay" Content="Day" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="buttonDay_Click" Margin="10,10,10,0" />
+        <Button Grid.Row="2" Grid.Column="0" x:Name="buttonWeek" Content="Week" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Click="buttonWeek_Click" Margin="10,10,10,0"/>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="buttonMonth" Content="Month" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Click="buttonMonth_Click" Margin="10"/>
+        <GridView x:Name="gridView" Grid.Row="0" Grid.Column="1" Margin="42,38,62,10" Grid.RowSpan="5">
+            <GridViewItem Content="Monday" Margin="0" Width="114" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="122.019">
+                <GridViewItem.RenderTransform>
+                    <CompositeTransform Rotation="-0.726"/>
+                </GridViewItem.RenderTransform>
+            </GridViewItem>
+            <GridViewItem Content="Tuesday" Margin="0"/>
+            <GridViewItem Content="Wednesday" Margin="0"/>
+            <GridViewItem Content="Thursday" Margin="0"/>
+            <GridViewItem Content="Friday" Margin="0"/>
+            <GridViewItem Content="Saturday" Margin="0"/>
+            <GridViewItem Content="Sunday" Margin="0" Width="134"/>
+            <GridViewItem Content="8:00" Margin="0"/>
+            <GridViewItem Content="8:00" Margin="0"/>
+            <GridViewItem Content="8:00" Margin="0"/>
+            <GridViewItem Content="8:00" Margin="0"/>
+            <GridViewItem Content="8:00" Margin="0"/>
+            <GridViewItem Content="8:00" Margin="0"/>
+            <GridViewItem Content="8:00" Margin="0" Width="134"/>
+            <GridViewItem Content="9:00" Margin="0"/>
+            <GridViewItem Content="9:00" Margin="0"/>
+            <GridViewItem Content="9:00" Margin="0"/>
+            <GridViewItem Content="9:00" Margin="0"/>
+            <GridViewItem Content="9:00" Margin="0"/>
+            <GridViewItem Content="9:00" Margin="0"/>
+            <GridViewItem Content="9:00" Margin="0"/>
+            <GridViewItem Content="10:00" Margin="0"/>
+            <GridViewItem Content="10:00" Margin="0"/>
+            <GridViewItem Content="10:00" Margin="0"/>
+            <GridViewItem Content="10:00" Margin="0"/>
+            <GridViewItem Content="10:00" Margin="0"/>
+            <GridViewItem Content="10:00" Margin="0"/>
+            <GridViewItem Content="10:00" Margin="0"/>
+            <GridViewItem Content="11:00" Margin="0"/>
+            <GridViewItem Content="11:00" Margin="0"/>
+            <GridViewItem Content="11:00" Margin="0"/>
+            <GridViewItem Content="11:00" Margin="0"/>
+            <GridViewItem Content="11:00" Margin="0"/>
+            <GridViewItem Content="11:00" Margin="0"/>
+            <GridViewItem Content="11:00" Margin="0"/>
+            <GridViewItem Content="12:00" Margin="0"/>
+            <GridViewItem Content="12:00" Margin="0"/>
+            <GridViewItem Content="12:00" Margin="0"/>
+            <GridViewItem Content="12:00" Margin="0"/>
+            <GridViewItem Content="12:00" Margin="0"/>
+            <GridViewItem Content="12:00" Margin="0"/>
+            <GridViewItem Content="12:00" Margin="0"/>
+            <GridViewItem Content="13:00" Margin="0"/>
+            <GridViewItem Content="13:00" Margin="0"/>
+            <GridViewItem Content="13:00" Margin="0"/>
+            <GridViewItem Content="13:00" Margin="0"/>
+            <GridViewItem Content="13:00" Margin="0"/>
+            <GridViewItem Content="13:00" Margin="0"/>
+            <GridViewItem Content="13:00" Margin="0"/>
+            <GridViewItem Content="14:00" Margin="0"/>
+            <GridViewItem Content="14:00" Margin="0"/>
+            <GridViewItem Content="14:00" Margin="0"/>
+            <GridViewItem Content="14:00" Margin="0"/>
+            <GridViewItem Content="14:00" Margin="0"/>
+            <GridViewItem Content="14:00" Margin="0"/>
+            <GridViewItem Content="14:00" Margin="0"/>
+            <GridViewItem Content="15:00" Margin="0"/>
+            <GridViewItem Content="15:00" Margin="0"/>
+            <GridViewItem Content="15:00" Margin="0"/>
+            <GridViewItem Content="15:00" Margin="0"/>
+            <GridViewItem Content="15:00" Margin="0"/>
+            <GridViewItem Content="15:00" Margin="0"/>
+            <GridViewItem Content="15:00" Margin="0"/>
+            <GridViewItem Content="16:00" Margin="0"/>
+            <GridViewItem Content="16:00" Margin="0"/>
+            <GridViewItem Content="16:00" Margin="0"/>
+            <GridViewItem Content="16:00" Margin="0"/>
+            <GridViewItem Content="16:00" Margin="0"/>
+            <GridViewItem Content="16:00" Margin="0"/>
+            <GridViewItem Content="16:00" Margin="0"/>
 
-        <CalendarView HorizontalAlignment="Stretch" Margin="10,10,293,670" VerticalAlignment="Stretch"/>
-        <Button x:Name="Day" Content="Day" HorizontalAlignment="Left" Margin="39,331,0,0" VerticalAlignment="Top" Width="220" Height="40"/>
-        <Button x:Name="Week" Content="Week" HorizontalAlignment="Left" Margin="39,376,0,0" VerticalAlignment="Top" Width="220" Height="40"/>
-        <Button x:Name="Month" Content="Month" HorizontalAlignment="Left" Margin="39,421,0,0" VerticalAlignment="Top" Width="220" Height="40"/>
-        <CalendarView HorizontalAlignment="Left" Margin="17,16,0,0" VerticalAlignment="Top" Height="290" Width="296"/>
+
+        </GridView>
+
 
     </Grid>
 </Page>
